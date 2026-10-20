@@ -1,0 +1,11 @@
+[package]
+name = "faster_enhancer_rs"
+version = "0.1.0"
+edition = "2024"
+description = "Dependency-free x86-64 streaming FastEnhancer-Medium speech enhancement"
+license = "MIT"
+readme = "README.md"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"

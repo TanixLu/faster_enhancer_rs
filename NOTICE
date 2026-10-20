@@ -1,0 +1,51 @@
+faster_enhancer_rs
+==================
+
+Copyright (c) 2026 Tanix
+Licensed under the MIT License. See LICENSE for the full license text.
+
+Upstream code
+-------------
+
+This Rust implementation adapts the x86 SIMD kernels and fixed inference
+graph from faster-enhancer.c:
+  https://github.com/kdrkdrkdr/faster-enhancer.c
+  Commit: 6838816e9ea5369f94f64c57d900796aa9e6a2d5
+
+Copyright (c) 2026 faster-enhancer.c contributors
+Licensed under the MIT License reproduced below.
+
+Model
+-----
+
+The FastEnhancer-Medium architecture and pretrained model originate from
+FastEnhancer: Speed-Optimized Streaming Neural Speech Enhancement:
+  https://github.com/aask1357/fastenhancer
+
+Copyright (c) 2025 AHN Sung Hwan
+Licensed under the MIT License reproduced below.
+
+The bundled weights/fe.q8 is a quantized derivative of the FastEnhancer-Medium
+pretrained model, distributed through faster-enhancer.c. These upstream
+copyright notices and license terms apply to the respective derived components.
+
+Upstream MIT License
+--------------------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
